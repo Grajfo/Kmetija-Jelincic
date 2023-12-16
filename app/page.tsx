@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { prefix } from './prefix'
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
           >
             By{' '}
             <Image
-              src="/vercel.svg"
+              src= {`${prefix}vercel.svg`}
               alt="Vercel Logo"
               className="dark:invert"
               width={100}
